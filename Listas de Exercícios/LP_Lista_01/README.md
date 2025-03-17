@@ -69,28 +69,51 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    
    ```mermaid
    flowchart TD
-       start(( Início )) -->
+       A(( Início )) --> B[/ Digite sua Idade /]
+       B --> C{ Possui Titulo de eleitor? }
+       C --> D{ Idade >=16? \n E \n Titulo=sim }
+       D --> |Sim| E[/Pode Votar/]
+       D --> |Não| F[/Não Pode Votar/]
+       E --> G
+       F --> G([Fim])
    ```
    
 6. Crie um fluxograma que leia dois números e determine o maior entre eles.
    
    ```mermaid
    flowchart TD
-      E["Sua resposta aqui!"]
+       start(( Início )) --> A[/ Didite N1 /]
+       start --> B[/ Digite N2 /]
+       A --> test{ N> determinado }
+       B --> test
+       test --> finish([FIM])
    ```
    
 7. Crie um fluxograma que leia três números e determine o maior entre eles.
    
    ```mermaid
    flowchart TD
-      F["Sua resposta aqui!"]
+       start(( Início )) --> A[/ Digite N1 /]
+       start --> B[/ Digite N2 /]
+       start --> C[/ Digite N3 /]
+       A --> test{ N> determinado }
+       B --> test
+       C --> test
+       test --> finish([FIM])
    ```
    
 8. Construa um fluxograma para calcular o fatorial de um número fornecido pelo usuário.
    
    ```mermaid
    flowchart TD
-      G["Sua resposta aqui!"]
+       A(( Início )) --> B[/ Digite um Número /]
+       B --> C[r=1]
+       C --> D{n>1?}
+       D --> |Sim| E{r=r*n}
+       E --> F[n=n-1]
+       F --> D
+       D --> |Não| G[/Resposta = r/]
+       G --> H([Fim])
    ```
    
 9. Elabore um fluxograma para verificar se um número digitado pelo usuário é par.
@@ -103,12 +126,26 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    
    ```mermaid
    flowchart TD
-      H["Sua resposta aqui!"]
+       start(( Início )) --> A[/ Digite um número /]
+       A --> B[O número % 2 == 0?]
+       B --> C[Sim]
+       B --> D[Não]
+       C --> E[Mostrar N par]
+       D --> F[Mostrar N impar]
+       E --> G[Fim]
+       F-->  G
    ```
    
 10. Elabore um fluxograma para verificar se um número digitado pelo usuário é primo.
    
    ```mermaid
    flowchart TD
-      I["Sua resposta aqui!"]
+      start(( Início )) --> A[/ Digite um número /]
+      A --> B[O número é >2?]
+      B --> C[Sim]
+      B --> D[Não]
+      C --> E[Fim]
+      D --> F[O N é divisvel por 2 até -1?]
+      F --> G[O N é divisível por 1 ou por ele mesmo?]
+      G --> J[Fim]
    ```
