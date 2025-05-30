@@ -1,6 +1,6 @@
- ![senai_logo](https://transparencia.sp.senai.br/Content/img/logo-senai.png)
+![senai_logo](https://transparencia.sp.senai.br/Content/img/logo-senai.png)
 
-# Lista de Exercícios 03: Estruturas de Decisão 
+# Lista de Exercícios 05: Vetores e Matrizes. 
 
 Profº.: Cainã Antunes Silva  
 Faculdade de Tecnologia **SENAI Sorocaba**  
@@ -8,125 +8,68 @@ Tecnólogo em Análise e Desenvolvimento de Sistemas (ADS)
 ___
 
 
-> O objetivo desta aula é dominar a manipulação do fluxo de um algorítmo através de estruturas de decisão exercitando o raciocínio lógico para a criação de algoritmos.  
+> O objetivo desta aula é compreender como os dados podem ser armazenados e manipulados em estruturas de vetores e matrizes.
 
-Estruturas de decisão em linguagens de programação, como if-else e switch, permitem que um programa execute diferentes blocos de código com base em condições específicas, tornando-o dinâmico e adaptável. Elas são essenciais para a lógica de controle, possibilitando a tomada de decisões automáticas com base em variáveis e entradas do usuário. Sem essas estruturas, os programas seriam sequenciais e incapazes de responder a diferentes cenários, limitando sua funcionalidade e utilidade.
+Vetores e matrizes são estruturas de dados que armazenam múltiplos valores de um mesmo tipo, permitindo organização e acesso eficiente às informações. Vetores são unidimensionais, enquanto matrizes possuem duas ou mais dimensões, sendo fundamentais para representar tabelas, imagens e cálculos matemáticos. Seu uso otimiza o processamento de dados, possibilitando operações em larga escala e facilitando a manipulação de grandes conjuntos de informações em algoritmos e aplicações diversas.
 
-Para mais informações acesse [Aula 04: Estruturas de decisão.](https://cainaantunes.notion.site/Aula-04-Estruturas-de-decis-o-189bde521b3b80d08502f505c356a0bb?pvs=4)
+Para mais informações acesse [Aula 06: Vetores e Matrizes.](https://cainaantunes.notion.site/Aula-06-Vetores-189bde521b3b8086b846fa65fc665a0b?pvs=4)
 
 ***
 
-1. Receba um número real e caso ele seja positivo imprima sua raiz quadrada, casocontrário imprima a mensagem: “Valor inválido!”
+1. Declare e inicialize um vetor de 10 posições, em seguida imprima este vetor em ordem inversa.
 
-2. O usuário entra com dois números inteiros e o programa indica qual o maior.
+2. Declare e inicialize um vetor de 10 posições, em seguida percorra este vetor alterando seus valores conforme a seguinte regra: some 2 a todos os valores situados em posições com índice par e para as posições de índice ímpar multiplique seu valores por 2.
 
-3. Entrar com a nota 1 (n1) e nota 2 (n2) e o programa exibe na tela a média. Se a média for menor que 50 imprimir “Reprovado” caso contrário imprimir “Aprovado”.
+3. Crie um programa que contenha um vetor de inteiros de 10 posições (inicializar o vetor junto com sua declaração). O programa deve solicitar ao usuário um número inteiro(armazenar em uma variável comum inteira) e então realizar uma busca dentro do vetor.Caso a variável digitada exista dentro do vetor, exibir sua posição no vetor caso contrário exibir a mensagem “Valor não encontrado”.
 
-4. Entrar com a nota 1 (n1) e nota 2 (n2) e o programa exibe na tela a média. Se a médiafor maior ou igual a 50, exibir “Aprovado”, caso contrário solicitar ao usuário a nota daprova de recuperação, tirar nova média entre a média anterior e a prova de recuperação,se a nova média for menor que 50 exibir “Reprovado” caso contrário exibir “Aprovado”.
+4. Crie um programa que armazene 10 números inteiros inseridos pelo usuário em um vetor. Em seguida, percorra o vetor e indique onde estão o maior e o menor número (imprima seus valores e suas posições no vetor).
 
-5. Elabore um programa que calcule a média de um aluno e imprima o conceito:
-    - A se a média >= 8.5
-    - B se a média >= 7 e média < 8.5
-    - C se a média >= 5 e média < 7
-    - D se a média < 5
-
-6. Em um sistemas de caixa eletrônico o usuário deve escolher entre as opções de um menu escolhendo um número inteiro entre 5 e 9 inclusive. Crie um algoritmo que valide a entrada do usuário exibindo a opções escolhida ou a mensagem de opção inválida casoo usuário entre com um número fora do range estabelecido.
-
-7. Receber os coeficientes $a$, $b$ e $c$ de uma equação do segundo grau e imprimir a solução($x_1$ e $x_2$). Equação do segundo grau: $ax^2+bx+c=0$. Exibir uma mensagem de aviso quando não houver raízes no conjunto de números Reais.
-
-8. O usuário entra com um número inteiro e o programa indica se o número é ímpar ou par.
-
-9. Dados três valores, verificar se eles podem ser valores dos lados de um triângulo. Se forem, imprima se é um triângulo equilátero, isósceles ou escaleno.
-    >**Condição de existência de um triângulo**: <br>
-    A medida de qualquer um dos lados de um triângulo deve ser menor do que a soma dos outros dois lados e maior que diferença entre essas mesmas medidas. <br>
-    - **Triângulo equilátero:** possui todos os lados iguais.
-    - **Triângulo isósceles:** possui apenas dois lados iguais.
-    - **Triângulo escaleno**: todos os lados são diferentes.10. 
+5. Crie um programa que possua um vetor de 10 posições com os seguintes valores inteiros armazenados: 
     
-10. Receber três números inteiros e exibi-los em ordem crescente.
+    ```java
+    int [] v1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    ```
 
-11. O usuário digita um número inteiro e o programa diz qual o dia da semana correspondente, por exemplo: 
+    Quando executado o programa deve criar uma cópia “invertida” em um segundo vetor e em seguida exibir ambos os vetores
 
-    - 1 – domingo <br> 
-    - 2 – segunda-feira <br> 
-    - e assim por diante. <br>
+6. Declare e inicialize um vetor, em seguida inverta a sequência dos valores armazenados neste mesmo vetor. 
     
-12. Elaborar uma minicalculadora, o programa recebe 2 números e exibe um menu para que o usuário escolha a operação e em seguida exibe o resultado. Exemplo:
+    > <font color="red"> **Restrição:** utilizar apenas um vetor e uma variável auxiliar </font>
 
-    ```plaintext
-    Digite o primeiro numero: 2
-    Digite o segundo numero: 3
-    ------------------------------
-    Menu:
-        1. Soma
-        2. Subtracao
-        3. Multiplicacao
-        4. Divisao
-    ------------------------------
-    Escolha uma opcao: 3
-    ------------------------------
-    Resultado: 2.0 x 3.0 = 6.0
-    ```
+7. Receber uma matriz 5x5 e encontrar a maior soma entre suas colunas e a maior somaentre suas linhas.
 
-13. Calculadora geométrica: exibir em um menu a opção de escolha entre três formageométricas: círculo, triangulo retângulo ou retângulo. Após a seleção da opção oprograma deverá solicitar que o usuário insira os dados necessário para realizar os cálculos de área e perímetro da forma selecionada, os resultados devem ser exibidos em seguida.Exemplo:
+8. Declare e inicialize uma matriz 5x5 em seguida exiba sua diagonal principal.
 
-    ```plaintext 
-    Menu:
-        1. Círculo
-        2. Triangulo Retângulo
-        3. Retângulo
-    --------------------------
-    Escolha uma opção: 2
-    --------------------------
-    Informe a base: 3
-    Informe a altura: 4
-    --------------------------
-    Área = 6
-    Perímetro = 12
-    ```
+9. Declare e inicialize uma matriz 5x5 em seguida exiba sua diagonal secundária.
 
-14. Crie um sistema de vendas onde o usuário insere o valor da compra e escolhe a formade pagamento que pode ser: débito, crédito ou pix. Após escolher a forma de pagamentoo sistema deve mostrar o total a pagar que deve seguir as seguintes regras:
+10. Declare e inicialize duas matrizes uma 3x2 e outra 2x2, em seguida gere a matriz produto entre as duas matrizes.
+Exemplo de como calcular a matriz produto:
 
-    - **Débito:** Conceder desconto de 5%.
-    - **Pix:** Conceder desconto de 10%.
-    - **Crédito:** taxa de 2% do valor total em parcelamento até 4 vezes ou taxa de 5% do valor total em parcelamentos superiores a 4 vezes (limite 10x).
+    $
+    \begin{bmatrix}
+    a_{11} & a_{12} \\
+    a_{21} & a_{22} \\
+    a_{31} & a_{32} \\
+    \end{bmatrix}.
+    \begin{bmatrix}
+    b_{11} & b_{12} \\
+    b_{21} & b_{22} \\
+    \end{bmatrix}=
+     \begin{bmatrix}
+    a_{11}.b_{11}+a_{12}.b_{21} & a_{11}.b_{12}+a_{12}.b_{22} \\
+    a_{21}.b_{11}+a_{22}.b_{21} & a_{21}.b_{12}+a_{22}.b_{22} \\
+    a_{31}.b_{11}+a_{32}.b_{21} & a_{31}.b_{12}+a_{32}.b_{22} \\
+    \end{bmatrix}
+    $
 
-    Exemplo:
+11. Aperfeiçoe o exercício anterior solicitando para que o usuário informe o tamanho das matrizes a serem multiplicadas. 
 
-    ```plaintext
-    Insira o valor da compra: 1000,00
-    ----------------------------------
-    Menu:
-        1. Débito
-        2. Pix
-        3. Crédito
-    ----------------------------------
-    Escolha a forma de pagamento: 3
-    ----------------------------------
-    Crédito Selecionado
-    ----------------------------------
-    Escolha o número de parcelas: 6
-    Valor final da compra: R$ 1050,00
-    ```
+    Valide se é possível calcular a matriz produto.
 
-15. Elabore um programa que simule o funcionamento de uma máquina de café, o usuário entra com o valor em reais, a máquina então apresenta um menu com as opções disponíveis e seus respectivos preços. Ao selecionar uma das opções a máquina informa a bebida selecionada e o troco calculado.
-
-    Exemplo:
+    > A multiplicação de matrizes só é possível quando o número de colunas da primeira matrizé igual ao número de linhas da segunda matriz. 
     
-    ```plaintext
-    Insira o dinheiro: 5,00
-    ------------------------------
-    Menu:
-        1. Café Expresso R$ 0,50
-        2. Café Longo R$ 1,00
-        3. Capuccino R$ 2,50
-        4. Chocolate R$ 2,00
-    ------------------------------
-    Escolha uma opção: 3
-    ------------------------------
-    Bebida selecionada: Capuccino
-    Seu Troco: R$ 2,50
-    ```
-
-
-
+    Se a multiplicação existir, a matriz produto terá a quantidade de linhas da primeira matriz e a quantidade de colunas da segundamatriz.
+    
+    Após a validação peça para o usuário inserir os valores de cada matriz e então gere amatriz produto
+    
+12. Declare e inicialize uma matriz 3x3 e calcule a sua determinante.
